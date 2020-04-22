@@ -108,7 +108,7 @@ div.container {
 div.imag {
     height: 300px;
     width: 100%;
-    background: url("../img/IMG_0225 yop color negro.jpg");
+    background: url("../img/perfil Guillermo Soto.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -201,9 +201,12 @@ div.text-container{
 }
 /*BTN-GO TOP*/
 #gotop{
-    text-align: right;
     color: #dddddd;
 }
 #gotop:hover{
     color: #2B292D;
+}
+.box-top {
+    display: flex;
+    justify-content: right;
 }
