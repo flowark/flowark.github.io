@@ -1,17 +1,28 @@
-.principal {
-    color: #e0e0e0;
-    background-color: rgba(43, 41, 45, 0.9);
-    padding: 5px 30px;
-    border-radius: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-    0 2px 4px rgba(0,0,0,0.07), 
-    0 4px 8px rgba(0,0,0,0.07), 
-    0 8px 16px rgba(0,0,0,0.07),
-    0 16px 32px rgba(0,0,0,0.07), 
-    0 32px 64px rgba(0,0,0,0.07);
+/*ESTILO CARD*/
+* {
+    /*transition: .33s ease all;*/
+    box-sizing: border-box;
 }
-h1,h2 {
-    font-family: 'Roboto Slab', serif;
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*ESTILO GRAL.*/
+h1{
+    font-size: 2.618em;
+}
+h2{
+    font-size: 2.125em;
+}
+h3{
+    font-size: 1.618em;
+}
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
 }
@@ -21,33 +32,41 @@ html {
     height: 100%
 }
 
-p,a {
-    font-family: 'Roboto', sans-serif;
+p{
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 1.1250em;
-    
+    font-size: 1.2500em;
+    line-height: normal;
 }
-a:hover{
-    background-color: #f36b7f; /*#00b0ff;*/
-    border-radius: 10px;
+.main a{
+    color: #e0e0e0;
+}
+.foot{
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 10px;
+}
+.main a:hover{
+    background-color: #2B292D;
 }
 .bgimg {
-    background-image: url('../img/pablo-education.png');
+    background-color: #e0e0e0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2392a0ac' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     min-height: 100%;
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 #separador {
   border: 0;
-  border-top: 4px solid #e6bf58;
+  border-top: 4px solid #e0e0e0;
   width: 50%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 #separador2{
-    border-top: 1px dashed gray;
+    border-top: 1px dashed #e0e0e0;
 }
 .svg-icon {
     width: 1em;
@@ -59,4 +78,132 @@ a:hover{
 .svg-icon circle {
     stroke: #e0e0e0;
     stroke-width: 1;
+}
+/*ESTILO CARD*/
+div.main, div.section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+    color: #e0e0e0;
+    background: rgb(66,165,245);
+    background: linear-gradient(0deg, rgba(66,165,245,1) 0%, rgba(51,8,103,0.6) 100%);
+
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+        0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07),
+        0 32px 64px rgba(0, 0, 0, 0.07);
+}
+div.imag {
+    height: 300px;
+    width: 100%;
+    background: url("../img/IMG_0225 yop-01.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+div.text-container{
+    margin: 10px;
+}
+@media screen and (width: 768px) {
+    div.main{
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    div.container {
+        flex-direction: row;
+        width: 100%;
+    }
+    div.imag {
+        height: 420px;
+        min-width: 360px;
+    }
+    div.text-container {
+        margin: 0 60px;
+        max-width: 660px;
+    }
+    .content{
+        padding: 100px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    div.main {
+        height: 100vh;
+        padding: 200px;
+    }
+    div.section{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    div.container {
+        max-width: 1200px;
+    }
+    div.imag {
+        height: 500px;
+        width: 100vh;
+    }
+    .content{
+        padding: 200px;
+    }
+    div.bg .foot{
+        padding-left: 200px;
+    }
+}
+/*ESTILO CURRI*/
+.bg{
+    background-color: #dddddd;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    /*margin: 30px;*/
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px #2B292D;
+}
+.content p, .content h3{
+    text-align: left;
+}
+.content h3{
+    border-left-style: solid;
+    border-color: #42a5f5;
+    padding: 5px;
+}
+/*ESTILO ACERCA DE*/
+#acerca-de .spoti-btn, #acerca-de .twit-btn, #acerca-de .git-btn, #acerca-de .spoti-btn:link, #acerca-de .twit-btn:link, #acerca-de .gi-btn:link {
+    color: #42a5f5;    
+}
+#acerca-de .spoti-btn:hover, #acerca-de .twit-btn:hover, #acerca-de .git-btn:hover{
+    color: #2B292D;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
+    grid-gap: 2%;
+}
+/*BTN-GO TOP*/
+#gotop{
+    text-align: right;
+    color: #dddddd;
+}
+#gotop:hover{
+    color: #2B292D;
 }
