@@ -13,18 +13,28 @@ html {
 }
 /*ESTILO GRAL.*/
 h1{
-    font-size: 2.618em;
+    font-size: 4.236em;/*3.052em;*/
+    line-height: 1.1;
+    text-align: left !important;
 }
 h2{
-    font-size: 2.125em;
+    font-size:2.441em;
 }
 h3{
-    font-size: 1.618em;
+    font-size:1.953em;
 }
 h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
+    color: #2B292D;
+}
+h4{
+    font-size:1.563em;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2B292D;
 }
 
 body,
@@ -35,20 +45,20 @@ html {
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     font-size: 1.2500em;
-    line-height: normal;
+    line-height: 2;
+    color: #2B292D;
 }
 .main a{
-    color: #e0e0e0;
+    color: #2B292D;
 }
 .foot{
     font-size: 12px;
     display: inline-block;
-    padding-left: 10px;
 }
 .main a:hover{
-    background-color: #2B292D;
+    background-color: #42a5f5;
 }
 .bgimg {
     background-color: #e0e0e0;
@@ -59,25 +69,12 @@ p{
 }
 #separador {
   border: 0;
-  border-top: 4px solid #e0e0e0;
+  border-top: 4px solid #42a5f5;
   width: 50%;
-  margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-#separador2{
-    border-top: 1px dashed #e0e0e0;
-}
-.svg-icon {
-    width: 1em;
-    height: 1em;
-}  
-.svg-icon path,.svg-icon polygon,.svg-icon rect {
-    fill: #e0e0e0;
-}
-.svg-icon circle {
-    stroke: #e0e0e0;
-    stroke-width: 1;
+  text-align: right;
+  margin-left: 0;
 }
 /*ESTILO CARD*/
 div.main, div.section {
@@ -92,18 +89,9 @@ div.container {
     align-items: center;
     justify-content: center;
     margin: 30px;
-
-    color: #e0e0e0;
+    /*color: #e0e0e0;
     background: rgb(66,165,245);
-    background: linear-gradient(0deg, rgba(66,165,245,1) 0%, rgba(51,8,103,0.6) 100%);
-
-    border-radius: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
-        0 2px 4px rgba(0, 0, 0, 0.07),
-        0 4px 8px rgba(0, 0, 0, 0.07),
-        0 8px 16px rgba(0, 0, 0, 0.07),
-        0 16px 32px rgba(0, 0, 0, 0.07),
-        0 32px 64px rgba(0, 0, 0, 0.07);
+    background: linear-gradient(0deg, rgba(66,165,245,1) 0%, rgba(51,8,103,0.6) 100%);*/
 }
 div.imag {
     height: 300px;
@@ -111,6 +99,7 @@ div.imag {
     background: url("../img/perfil Guillermo Soto.jpg");
     background-position: center;
     background-size: cover;
+    box-shadow: 30px 30px #2B292D;
 }
 div.text-container{
     margin: 10px;
@@ -133,30 +122,27 @@ div.text-container{
         margin: 0 60px;
         max-width: 660px;
     }
-    .content{
-        padding: 100px;
+    div.section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    div.bg .foot{
+        padding-left: 100px;
     }
 }
 @media screen and (min-width: 1024px) {
     div.main {
         height: 100vh;
-        padding: 200px;
     }
     div.section{
         padding-left: 200px;
         padding-right: 200px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    div.container {
-        max-width: 1200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     div.imag {
-        height: 500px;
+        height: 700px;
         width: 100vh;
-    }
-    .content{
-        padding: 200px;
     }
     div.bg .foot{
         padding-left: 200px;
@@ -173,9 +159,6 @@ div.text-container{
     justify-content: center;
     /*margin: 30px;*/
     padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px #2B292D;
 }
 .content p, .content h3{
     text-align: left;
@@ -198,15 +181,4 @@ div.text-container{
     align-content: center; 
     align-items: center;
     grid-gap: 2%;
-}
-/*BTN-GO TOP*/
-#gotop{
-    color: #dddddd;
-}
-#gotop:hover{
-    color: #2B292D;
-}
-.box-top {
-    display: flex;
-    justify-content: right;
 }
